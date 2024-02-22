@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F0E7FF82B84651D0013A2F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E7FF72B84651D0013A2F2 /* AppDelegate.swift */; };
+		2F76DA142B86C2C500739761 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F76DA132B86C2C500739761 /* Weight.swift */; };
+		2F76DA162B86D7B700739761 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F76DA152B86D7B700739761 /* FileManagerExtension.swift */; };
+		2F76DA1D2B86EF3700739761 /* puff.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F76DA1B2B86EF3700739761 /* puff.wav */; };
+		2F76DA1E2B86EF3700739761 /* vineboom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F76DA1C2B86EF3700739761 /* vineboom.mp3 */; };
+		2F76DA222B86F79000739761 /* scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F76DA212B86F79000739761 /* scrape.wav */; };
+		2F76DA262B872E4C00739761 /* clang.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F76DA252B872E4C00739761 /* clang.wav */; };
+		2F8A7CBD2B851DD800EC3DDA /* ObservationToken in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8A7CBC2B851DD800EC3DDA /* ObservationToken */; };
+		2F8A7CBF2B851DD800EC3DDA /* PointerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8A7CBE2B851DD800EC3DDA /* PointerKit */; };
+		2F8A7CC12B85585500EC3DDA /* EventTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A7CC02B85585500EC3DDA /* EventTap.swift */; };
+		2F8A7CC42B8558C000EC3DDA /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A7CC32B8558C000EC3DDA /* Scale.swift */; };
+		2F8A7CC72B855A1800EC3DDA /* CGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A7CC62B855A1800EC3DDA /* CGExtension.swift */; };
+		2F8A7CC92B855AAC00EC3DDA /* AXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A7CC82B855AAC00EC3DDA /* AXExtension.swift */; };
+		2F8A7CCB2B855AC300EC3DDA /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A7CCA2B855AC300EC3DDA /* DoubleExtension.swift */; };
+		2FEAC9D82B84693A0081E53C /* NSWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAC9D72B84693A0081E53C /* NSWindow.swift */; };
+		2FF687F72B842B6D004F9C71 /* DragulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF687F62B842B6D004F9C71 /* DragulaApp.swift */; };
+		2FF687F92B842B6D004F9C71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF687F82B842B6D004F9C71 /* ContentView.swift */; };
+		2FF687FB2B842B6E004F9C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF687FA2B842B6E004F9C71 /* Assets.xcassets */; };
+		2FF687FE2B842B6E004F9C71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF687FD2B842B6E004F9C71 /* Preview Assets.xcassets */; };
+		2FF688092B842B6E004F9C71 /* DragulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688082B842B6E004F9C71 /* DragulaTests.swift */; };
+		2FF688132B842B6E004F9C71 /* DragulaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688122B842B6E004F9C71 /* DragulaUITests.swift */; };
+		2FF688152B842B6E004F9C71 /* DragulaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688142B842B6E004F9C71 /* DragulaUITestsLaunchTests.swift */; };
+		2FF688242B842D0A004F9C71 /* AccessibilityPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688232B842D0A004F9C71 /* AccessibilityPermission.swift */; };
+		2FF688272B842D13004F9C71 /* AccessibilityPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688252B842D13004F9C71 /* AccessibilityPermissionView.swift */; };
+		2FF688282B842D13004F9C71 /* AccessibilityPermissionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688262B842D13004F9C71 /* AccessibilityPermissionWindow.swift */; };
+		2FF6882A2B842D42004F9C71 /* HyperLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF688292B842D42004F9C71 /* HyperLink.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FF688052B842B6E004F9C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FF687EB2B842B6D004F9C71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FF687F22B842B6D004F9C71;
+			remoteInfo = Dragula;
+		};
+		2FF6880F2B842B6E004F9C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FF687EB2B842B6D004F9C71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FF687F22B842B6D004F9C71;
+			remoteInfo = Dragula;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F0E7FF62B8463280013A2F2 /* PointerKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PointerKit; sourceTree = "<group>"; };
+		2F0E7FF72B84651D0013A2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F76DA132B86C2C500739761 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		2F76DA152B86D7B700739761 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
+		2F76DA1B2B86EF3700739761 /* puff.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = puff.wav; sourceTree = "<group>"; };
+		2F76DA1C2B86EF3700739761 /* vineboom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vineboom.mp3; sourceTree = "<group>"; };
+		2F76DA212B86F79000739761 /* scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scrape.wav; sourceTree = "<group>"; };
+		2F76DA252B872E4C00739761 /* clang.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clang.wav; sourceTree = "<group>"; };
+		2F76DA272B872E6C00739761 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2F8A7CC02B85585500EC3DDA /* EventTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTap.swift; sourceTree = "<group>"; };
+		2F8A7CC32B8558C000EC3DDA /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		2F8A7CC62B855A1800EC3DDA /* CGExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGExtension.swift; sourceTree = "<group>"; };
+		2F8A7CC82B855AAC00EC3DDA /* AXExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AXExtension.swift; sourceTree = "<group>"; };
+		2F8A7CCA2B855AC300EC3DDA /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		2FEAC9D42B8468580081E53C /* ObservationToken */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ObservationToken; sourceTree = "<group>"; };
+		2FEAC9D72B84693A0081E53C /* NSWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWindow.swift; sourceTree = "<group>"; };
+		2FF687F32B842B6D004F9C71 /* Dragula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragula.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF687F62B842B6D004F9C71 /* DragulaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragulaApp.swift; sourceTree = "<group>"; };
+		2FF687F82B842B6D004F9C71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FF687FA2B842B6E004F9C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FF687FD2B842B6E004F9C71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FF687FF2B842B6E004F9C71 /* Dragula.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dragula.entitlements; sourceTree = "<group>"; };
+		2FF688042B842B6E004F9C71 /* DragulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF688082B842B6E004F9C71 /* DragulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragulaTests.swift; sourceTree = "<group>"; };
+		2FF6880E2B842B6E004F9C71 /* DragulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragulaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF688122B842B6E004F9C71 /* DragulaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragulaUITests.swift; sourceTree = "<group>"; };
+		2FF688142B842B6E004F9C71 /* DragulaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragulaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FF688232B842D0A004F9C71 /* AccessibilityPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityPermission.swift; sourceTree = "<group>"; };
+		2FF688252B842D13004F9C71 /* AccessibilityPermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionView.swift; sourceTree = "<group>"; };
+		2FF688262B842D13004F9C71 /* AccessibilityPermissionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionWindow.swift; sourceTree = "<group>"; };
+		2FF688292B842D42004F9C71 /* HyperLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperLink.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FF687F02B842B6D004F9C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8A7CBD2B851DD800EC3DDA /* ObservationToken in Frameworks */,
+				2F8A7CBF2B851DD800EC3DDA /* PointerKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF688012B842B6E004F9C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6880B2B842B6E004F9C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F76DA172B86D7C400739761 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A7CC82B855AAC00EC3DDA /* AXExtension.swift */,
+				2F8A7CC62B855A1800EC3DDA /* CGExtension.swift */,
+				2F8A7CCA2B855AC300EC3DDA /* DoubleExtension.swift */,
+				2F76DA152B86D7B700739761 /* FileManagerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F76DA1A2B86EF2D00739761 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2F76DA1B2B86EF3700739761 /* puff.wav */,
+				2F76DA212B86F79000739761 /* scrape.wav */,
+				2F76DA252B872E4C00739761 /* clang.wav */,
+				2F76DA1C2B86EF3700739761 /* vineboom.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2F80B9232B8462A9009DF029 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2FEAC9D42B8468580081E53C /* ObservationToken */,
+				2F0E7FF62B8463280013A2F2 /* PointerKit */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2F8A7CBB2B851DD800EC3DDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F8A7CC22B85588900EC3DDA /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A7CC02B85585500EC3DDA /* EventTap.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		2F8A7CC52B85593300EC3DDA /* WeightedDrag */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A7CC32B8558C000EC3DDA /* Scale.swift */,
+				2F76DA132B86C2C500739761 /* Weight.swift */,
+			);
+			path = WeightedDrag;
+			sourceTree = "<group>";
+		};
+		2FEAC9D62B8469140081E53C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FEAC9D72B84693A0081E53C /* NSWindow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2FF687EA2B842B6D004F9C71 = {
+			isa = PBXGroup;
+			children = (
+				2F76DA272B872E6C00739761 /* README.md */,
+				2F76DA1A2B86EF2D00739761 /* Sounds */,
+				2F80B9232B8462A9009DF029 /* Modules */,
+				2FF687F52B842B6D004F9C71 /* Dragula */,
+				2FF688072B842B6E004F9C71 /* DragulaTests */,
+				2FF688112B842B6E004F9C71 /* DragulaUITests */,
+				2FF687F42B842B6D004F9C71 /* Products */,
+				2F8A7CBB2B851DD800EC3DDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FF687F42B842B6D004F9C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FF687F32B842B6D004F9C71 /* Dragula.app */,
+				2FF688042B842B6E004F9C71 /* DragulaTests.xctest */,
+				2FF6880E2B842B6E004F9C71 /* DragulaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FF687F52B842B6D004F9C71 /* Dragula */ = {
+			isa = PBXGroup;
+			children = (
+				2F76DA172B86D7C400739761 /* Extension */,
+				2F8A7CC52B85593300EC3DDA /* WeightedDrag */,
+				2F8A7CC22B85588900EC3DDA /* Event */,
+				2FF688222B842CF9004F9C71 /* UI */,
+				2FF688212B842CEB004F9C71 /* Accessibility */,
+				2FF687F62B842B6D004F9C71 /* DragulaApp.swift */,
+				2FF687FA2B842B6E004F9C71 /* Assets.xcassets */,
+				2FF687FF2B842B6E004F9C71 /* Dragula.entitlements */,
+				2FF687FC2B842B6E004F9C71 /* Preview Content */,
+				2F0E7FF72B84651D0013A2F2 /* AppDelegate.swift */,
+			);
+			path = Dragula;
+			sourceTree = "<group>";
+		};
+		2FF687FC2B842B6E004F9C71 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2FF687FD2B842B6E004F9C71 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FF688072B842B6E004F9C71 /* DragulaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FF688082B842B6E004F9C71 /* DragulaTests.swift */,
+			);
+			path = DragulaTests;
+			sourceTree = "<group>";
+		};
+		2FF688112B842B6E004F9C71 /* DragulaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FF688122B842B6E004F9C71 /* DragulaUITests.swift */,
+				2FF688142B842B6E004F9C71 /* DragulaUITestsLaunchTests.swift */,
+			);
+			path = DragulaUITests;
+			sourceTree = "<group>";
+		};
+		2FF688212B842CEB004F9C71 /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				2FF688232B842D0A004F9C71 /* AccessibilityPermission.swift */,
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
+		2FF688222B842CF9004F9C71 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2FF688252B842D13004F9C71 /* AccessibilityPermissionView.swift */,
+				2FF688262B842D13004F9C71 /* AccessibilityPermissionWindow.swift */,
+				2FEAC9D62B8469140081E53C /* Extensions */,
+				2FF687F82B842B6D004F9C71 /* ContentView.swift */,
+				2FF688292B842D42004F9C71 /* HyperLink.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FF687F22B842B6D004F9C71 /* Dragula */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF688182B842B6E004F9C71 /* Build configuration list for PBXNativeTarget "Dragula" */;
+			buildPhases = (
+				2FF687EF2B842B6D004F9C71 /* Sources */,
+				2FF687F02B842B6D004F9C71 /* Frameworks */,
+				2FF687F12B842B6D004F9C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dragula;
+			packageProductDependencies = (
+				2F8A7CBC2B851DD800EC3DDA /* ObservationToken */,
+				2F8A7CBE2B851DD800EC3DDA /* PointerKit */,
+			);
+			productName = Dragula;
+			productReference = 2FF687F32B842B6D004F9C71 /* Dragula.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FF688032B842B6E004F9C71 /* DragulaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF6881B2B842B6E004F9C71 /* Build configuration list for PBXNativeTarget "DragulaTests" */;
+			buildPhases = (
+				2FF688002B842B6E004F9C71 /* Sources */,
+				2FF688012B842B6E004F9C71 /* Frameworks */,
+				2FF688022B842B6E004F9C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FF688062B842B6E004F9C71 /* PBXTargetDependency */,
+			);
+			name = DragulaTests;
+			productName = DragulaTests;
+			productReference = 2FF688042B842B6E004F9C71 /* DragulaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FF6880D2B842B6E004F9C71 /* DragulaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF6881E2B842B6E004F9C71 /* Build configuration list for PBXNativeTarget "DragulaUITests" */;
+			buildPhases = (
+				2FF6880A2B842B6E004F9C71 /* Sources */,
+				2FF6880B2B842B6E004F9C71 /* Frameworks */,
+				2FF6880C2B842B6E004F9C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FF688102B842B6E004F9C71 /* PBXTargetDependency */,
+			);
+			name = DragulaUITests;
+			productName = DragulaUITests;
+			productReference = 2FF6880E2B842B6E004F9C71 /* DragulaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FF687EB2B842B6D004F9C71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2FF687F22B842B6D004F9C71 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2FF688032B842B6E004F9C71 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2FF687F22B842B6D004F9C71;
+					};
+					2FF6880D2B842B6E004F9C71 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2FF687F22B842B6D004F9C71;
+					};
+				};
+			};
+			buildConfigurationList = 2FF687EE2B842B6D004F9C71 /* Build configuration list for PBXProject "Dragula" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FF687EA2B842B6D004F9C71;
+			productRefGroup = 2FF687F42B842B6D004F9C71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FF687F22B842B6D004F9C71 /* Dragula */,
+				2FF688032B842B6E004F9C71 /* DragulaTests */,
+				2FF6880D2B842B6E004F9C71 /* DragulaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FF687F12B842B6D004F9C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F76DA1D2B86EF3700739761 /* puff.wav in Resources */,
+				2F76DA1E2B86EF3700739761 /* vineboom.mp3 in Resources */,
+				2FF687FE2B842B6E004F9C71 /* Preview Assets.xcassets in Resources */,
+				2FF687FB2B842B6E004F9C71 /* Assets.xcassets in Resources */,
+				2F76DA222B86F79000739761 /* scrape.wav in Resources */,
+				2F76DA262B872E4C00739761 /* clang.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF688022B842B6E004F9C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6880C2B842B6E004F9C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FF687EF2B842B6D004F9C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF688272B842D13004F9C71 /* AccessibilityPermissionView.swift in Sources */,
+				2F8A7CC92B855AAC00EC3DDA /* AXExtension.swift in Sources */,
+				2FF688242B842D0A004F9C71 /* AccessibilityPermission.swift in Sources */,
+				2FEAC9D82B84693A0081E53C /* NSWindow.swift in Sources */,
+				2FF6882A2B842D42004F9C71 /* HyperLink.swift in Sources */,
+				2FF687F92B842B6D004F9C71 /* ContentView.swift in Sources */,
+				2F0E7FF82B84651D0013A2F2 /* AppDelegate.swift in Sources */,
+				2F8A7CC72B855A1800EC3DDA /* CGExtension.swift in Sources */,
+				2FF687F72B842B6D004F9C71 /* DragulaApp.swift in Sources */,
+				2F76DA142B86C2C500739761 /* Weight.swift in Sources */,
+				2F8A7CC12B85585500EC3DDA /* EventTap.swift in Sources */,
+				2F8A7CC42B8558C000EC3DDA /* Scale.swift in Sources */,
+				2F76DA162B86D7B700739761 /* FileManagerExtension.swift in Sources */,
+				2F8A7CCB2B855AC300EC3DDA /* DoubleExtension.swift in Sources */,
+				2FF688282B842D13004F9C71 /* AccessibilityPermissionWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF688002B842B6E004F9C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF688092B842B6E004F9C71 /* DragulaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6880A2B842B6E004F9C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF688132B842B6E004F9C71 /* DragulaUITests.swift in Sources */,
+				2FF688152B842B6E004F9C71 /* DragulaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FF688062B842B6E004F9C71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FF687F22B842B6D004F9C71 /* Dragula */;
+			targetProxy = 2FF688052B842B6E004F9C71 /* PBXContainerItemProxy */;
+		};
+		2FF688102B842B6E004F9C71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FF687F22B842B6D004F9C71 /* Dragula */;
+			targetProxy = 2FF6880F2B842B6E004F9C71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FF688162B842B6E004F9C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FF688172B842B6E004F9C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2FF688192B842B6E004F9C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Dragula/Dragula.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Dragula/Preview\\ Content Dragula/Assets.xcassets";
+				DEVELOPMENT_TEAM = VR36F8LLWH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Dragula;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pbt.Dragula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2FF6881A2B842B6E004F9C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Dragula/Dragula.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Dragula/Preview\\ Content Dragula/Assets.xcassets";
+				DEVELOPMENT_TEAM = VR36F8LLWH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Dragula;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pbt.Dragula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2FF6881C2B842B6E004F9C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VR36F8LLWH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pbt.DragulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragula.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dragula";
+			};
+			name = Debug;
+		};
+		2FF6881D2B842B6E004F9C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VR36F8LLWH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pbt.DragulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragula.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dragula";
+			};
+			name = Release;
+		};
+		2FF6881F2B842B6E004F9C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VR36F8LLWH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pbt.DragulaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dragula;
+			};
+			name = Debug;
+		};
+		2FF688202B842B6E004F9C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VR36F8LLWH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pbt.DragulaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dragula;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FF687EE2B842B6D004F9C71 /* Build configuration list for PBXProject "Dragula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF688162B842B6E004F9C71 /* Debug */,
+				2FF688172B842B6E004F9C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF688182B842B6E004F9C71 /* Build configuration list for PBXNativeTarget "Dragula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF688192B842B6E004F9C71 /* Debug */,
+				2FF6881A2B842B6E004F9C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF6881B2B842B6E004F9C71 /* Build configuration list for PBXNativeTarget "DragulaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF6881C2B842B6E004F9C71 /* Debug */,
+				2FF6881D2B842B6E004F9C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF6881E2B842B6E004F9C71 /* Build configuration list for PBXNativeTarget "DragulaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF6881F2B842B6E004F9C71 /* Debug */,
+				2FF688202B842B6E004F9C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F8A7CBC2B851DD800EC3DDA /* ObservationToken */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObservationToken;
+		};
+		2F8A7CBE2B851DD800EC3DDA /* PointerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PointerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2FF687EB2B842B6D004F9C71 /* Project object */;
+}
