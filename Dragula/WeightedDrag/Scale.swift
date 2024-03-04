@@ -11,14 +11,12 @@ fileprivate let script = """
 set theSize to 0
 
 tell application "Finder"
-    set theSelection to the selection as alias list
-    repeat with theItem in theSelection
-        set theInfo to (info for theItem)
-        set theSize to theSize + (size of theInfo)
-    end repeat
+    set theSelection to the selection as alias
+    set theInfo to (info for theSelection)
+    set theSize to (size of theInfo)
 end tell
-return theSize
 
+return theSize
 """
 
 fileprivate let windowscript = """

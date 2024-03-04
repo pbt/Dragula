@@ -10,6 +10,7 @@ struct ContentView: View {
     @State private var shouldPlaySound = false
     @State private var shouldDragWindow = false
     @State private var applyAccel = false
+    @State private var isOn = true
     
     @StateObject private var accessibilityPermission = AccessibilityPermission.shared
 
@@ -18,7 +19,14 @@ struct ContentView: View {
             HStack() {
                 VStack() {
                     Image(.dragula).resizable().scaledToFit()
-                    Text("Dragula").font(.largeTitle)
+                    Toggle(isOn: $isOn) {
+                        Text("Dragula")
+                    }.onChange(of: isOn) { _, isOn in
+                        EventTap.shared?.enabled = isOn
+                    }.toggleStyle(.switch).font(.largeTitle).bold()
+                    
+                    Text("Weighted drag-and-drop").font(.callout)
+
                 }.padding()
                     .frame(width: 200, height: 400).background(in: Rectangle())
                 Form {

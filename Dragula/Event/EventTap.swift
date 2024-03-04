@@ -45,6 +45,7 @@ class EventTap {
 
     var shouldPlaySound = false
     var windowDrag = false
+    var enabled = true
     
     private var calculatingWeight = true
     private var weightCalculatedForDrag = false
@@ -86,6 +87,8 @@ class EventTap {
         if type == CGEventType.tapDisabledByUserInput {
             return nil
         }
+        
+        guard enabled else { return Unmanaged.passUnretained(event) }
         
         // get window position and role and make sure we are in Finder
         let position =  NSEvent.mouseLocation.screenFlipped
@@ -154,7 +157,7 @@ class EventTap {
         }
         
         // Handle window drags too
-        if windowDrag && (element.getValue(.role) as! NSString == "toolbar" || element.getValue(.roleDescription) as! NSString == "text") {
+        if windowDrag && (element.getValue(.role) as! NSAccessibility.Role == .toolbar || element.getValue(.roleDescription) as! NSString == "text") {
             if type == .leftMouseDragged && self.weight == nil && !isWindowDragging && !isDraggingItem {
                 calculatingWeight = true
                 isWindowDragging = true
@@ -262,7 +265,7 @@ class EventTap {
                         let fileSize = self.currentSelection.map {url in Scale.weight(ofUrl: url)}.reduce(0.0) {(result, val) in result+val};
                         print(fileSize)
                         self.calculatingWeight = false
-                        self.weightCalculatedForDrag = true
+                        self.weightCalculatedForDrag = true 
                         guard self.isDraggingItem else { return }
                         Weight.apply(weight:fileSize)
                         self.weight = fileSize
