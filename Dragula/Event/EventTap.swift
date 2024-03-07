@@ -265,7 +265,7 @@ class EventTap {
                         let fileSize = self.currentSelection.map {url in Scale.weight(ofUrl: url)}.reduce(0.0) {(result, val) in result+val};
                         print(fileSize)
                         self.calculatingWeight = false
-                        self.weightCalculatedForDrag = true 
+                        self.weightCalculatedForDrag = true
                         guard self.isDraggingItem else { return }
                         Weight.apply(weight:fileSize)
                         self.weight = fileSize

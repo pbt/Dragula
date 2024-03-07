@@ -25,7 +25,12 @@ struct ContentView: View {
                         EventTap.shared?.enabled = isOn
                     }.toggleStyle(.switch).font(.largeTitle).bold()
                     
-                    Text("Weighted drag-and-drop").font(.callout)
+                    Text("Weighted drag-and-drop is").font(.callout)
+                    if isOn {
+                        Text("enabled").bold().font(.callout)
+                    } else {
+                        Text("disabled").bold().font(.callout)
+                    }
 
                 }.padding()
                     .frame(width: 200, height: 400).background(in: Rectangle())
@@ -46,7 +51,7 @@ struct ContentView: View {
                     }
                     Section(header: Text("Bonuses (Buggy)").font(.headline)) {
                                 Toggle(isOn: $shouldDragWindow) {
-                                    Text("Add drag behavior to Finder windows")
+                                    Text("Also weigh down Finder windows")
                                 }.onChange(of: shouldDragWindow) { _, shouldDragWindow in
                                     EventTap.shared?.windowDrag = shouldDragWindow
                                 }
