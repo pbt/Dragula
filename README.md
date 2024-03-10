@@ -8,7 +8,7 @@
 
 [hi-res video @ 1x speed (**SOUND ON**!)
 ](https://share.cleanshot.com/Gz9S9WXy
-)
+) • [read the blog post](https://www.pbt.dev/blog/dragula/)
 
 </div>
 
